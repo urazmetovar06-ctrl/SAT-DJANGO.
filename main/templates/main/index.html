@@ -1,0 +1,587 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO SEMEY — Экология города Семей</title>
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+
+    <style>
+        .info-card {
+            overflow: hidden;
+        }
+
+        .info-card img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <a href="#home" class="logo">ECO<span>SEMEY</span></a>
+
+    <nav>
+        <a href="#problems">Проблемы</a>
+        <a href="#responsibility">Кто отвечает</a>
+        <a href="#laws">Законодательство</a>
+        <a href="#solutions">Решения</a>
+        <a href="#quiz">Тест</a>
+    </nav>
+
+    <a href="#contact" class="header-btn">Обратиться</a>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="eyebrow">ЭКОЛОГИЧЕСКИЙ ПОРТАЛ ГОРОДА</p>
+
+        <h1>Семей — наш город.<br>
+            <span>Наша ответственность.</span>
+        </h1>
+
+        <p class="hero-text">
+            Экологическое состояние города, актуальные проблемы,
+            ответственность организаций и участие каждого жителя
+            в сохранении окружающей среды.
+        </p>
+
+        <a href="#problems" class="main-btn">
+            Изучить экологию города ↓
+        </a>
+    </div>
+
+    <div class="hero-label">ECOLOGY · SEMEY · KAZAKHSTAN</div>
+</section>
+
+
+<section class="intro section">
+    <div>
+        <p class="eyebrow">О ПРОЕКТЕ</p>
+        <h2>Экология начинается<br>с понимания проблемы</h2>
+    </div>
+
+    <p>
+        Семей — один из значимых городов Восточного Казахстана,
+        расположенный на берегах реки Иртыш. Экологическое
+        благополучие города зависит от состояния воздуха, воды,
+        почвы, обращения с отходами и отношения общества к природе.
+        Этот портал создан для распространения экологических знаний,
+        повышения осведомлённости жителей и формирования
+        ответственного отношения к окружающей среде.
+    </p>
+</section>
+
+
+<!-- ЭКОЛОГИЧЕСКИЕ ПРОБЛЕМЫ -->
+
+<section class="section problems" id="problems">
+
+    <p class="eyebrow">01 / ЭКОЛОГИЧЕСКАЯ ОБСТАНОВКА</p>
+
+    <h2>Основные экологические проблемы</h2>
+
+    <p class="section-desc">
+        Какие направления требуют постоянного внимания
+        со стороны города, предприятий и жителей?
+    </p>
+
+    <div class="cards">
+
+        <article class="info-card">
+            <img
+                src="https://gdb.rferl.org/51a79eb3-c06d-457e-8839-ef776ca22cd0_w1200_h630.jpg"
+                alt="Загрязнение воздуха"
+                loading="lazy"
+            >
+
+            <div class="card-number">01</div>
+
+            <h3>Загрязнение воздуха</h3>
+
+            <p>
+                Выбросы промышленных предприятий, автомобильный транспорт,
+                отопление частных домов и образование пыли могут влиять
+                на качество атмосферного воздуха.
+            </p>
+
+            <span>АТМОСФЕРА</span>
+        </article>
+
+
+        <article class="info-card">
+            <img
+                src="https://avatars.mds.yandex.net/i?id=53aac9728f14048cc476f96afd4e995a_l-4470366-images-thumbs&n=13"
+                alt="Загрязнение водных ресурсов"
+                loading="lazy"
+            >
+
+            <div class="card-number">02</div>
+
+            <h3>Состояние реки Иртыш</h3>
+
+            <p>
+                Водные ресурсы нуждаются в защите от загрязнения,
+                контроля качества воды, соблюдения водоохранных
+                требований и предотвращения сбросов.
+            </p>
+
+            <span>ВОДНЫЕ РЕСУРСЫ</span>
+        </article>
+
+
+        <article class="info-card">
+            <img
+                src="https://liter.kz/cache/imagine/1200/uploads/news/2022/07/19/62d686d4b676a231671040.jpg"
+                alt="Скопление бытовых отходов"
+                loading="lazy"
+            >
+
+            <div class="card-number">03</div>
+
+            <h3>Бытовые отходы</h3>
+
+            <p>
+                Несанкционированные свалки, неправильная сортировка,
+                переполнение контейнеров и недостаточная переработка
+                создают экологические проблемы.
+            </p>
+
+            <span>ОТХОДЫ</span>
+        </article>
+
+
+        <article class="info-card">
+            <img
+                src="https://avatars.mds.yandex.net/i?id=2761ba8873ffbe0c8cc58ba39679d5fc7dc4cf1a-4120632-images-thumbs&n=13"
+                alt="Загрязнение почвы"
+                loading="lazy"
+            >
+
+            <div class="card-number">04</div>
+
+            <h3>Загрязнение почвы</h3>
+
+            <p>
+                Нефтепродукты, химические вещества, мусор
+                и неправильное обращение с отходами способны
+                ухудшать состояние городских земель.
+            </p>
+
+            <span>ПОЧВА</span>
+        </article>
+
+
+        <article class="info-card">
+            <img
+                src="https://24.kz/media/k2/items/cache/faa84b5b5b5c63fe7a6aee6deb61692d_XL.jpg?t=20250529_064155"
+                alt="Зелёные насаждения"
+                loading="lazy"
+            >
+
+            <div class="card-number">05</div>
+
+            <h3>Состояние зелёных зон</h3>
+
+            <p>
+                Сохранение деревьев, парков и скверов,
+                развитие озеленения и защита городских
+                экосистем имеют большое значение.
+            </p>
+
+            <span>БИОРАЗНООБРАЗИЕ</span>
+        </article>
+
+
+        <article class="info-card">
+            <img
+                src="https://avatars.mds.yandex.net/i?id=30438483227bca1df678ccad4a90e585_l-12530428-images-thumbs&n=13"
+                alt="Природная среда"
+                loading="lazy"
+            >
+
+            <div class="card-number">06</div>
+
+            <h3>Радиационное наследие</h3>
+
+            <p>
+                История Семипалатинского испытательного ядерного полигона
+                требует внимания к радиационной безопасности,
+                мониторингу и защите здоровья населения.
+            </p>
+
+            <span>РАДИАЦИОННАЯ БЕЗОПАСНОСТЬ</span>
+        </article>
+
+    </div>
+</section>
+
+
+<!-- ЗАКОНОДАТЕЛЬСТВО -->
+
+<section class="laws section" id="laws">
+
+    <p class="eyebrow">03 / ПРАВОВАЯ ОСНОВА</p>
+
+    <h2>Экологическое законодательство Казахстана</h2>
+
+    <div class="law-grid">
+
+        <article>
+            <h3>Экологический кодекс РК</h3>
+
+            <p>
+                Кодекс от 2 января 2021 года № 400-VI ЗРК.
+                Основной документ, регулирующий отношения
+                в сфере охраны окружающей среды.
+            </p>
+
+            <a href="https://adilet.zan.kz/rus/docs/K2100000400"
+               target="_blank">
+                Открыть документ ↗
+            </a>
+        </article>
+
+
+        <article>
+            <h3>Водный кодекс РК</h3>
+
+            <p>
+                Регулирует использование и охрану водных ресурсов,
+                включая вопросы защиты водных объектов.
+            </p>
+
+            <a href="https://adilet.zan.kz/rus"
+               target="_blank">
+                База законодательства ↗
+            </a>
+        </article>
+
+
+        <article>
+            <h3>Закон о гражданской защите</h3>
+
+            <p>
+                Регулирует вопросы предупреждения и ликвидации
+                чрезвычайных ситуаций и защиты населения.
+            </p>
+
+            <a href="https://adilet.zan.kz/rus/docs/Z1400000188"
+               target="_blank">
+                Открыть документ ↗
+            </a>
+        </article>
+
+    </div>
+</section>
+
+
+<!-- РЕШЕНИЯ -->
+
+<section class="solutions section" id="solutions">
+
+    <p class="eyebrow">04 / ЭКОЛОГИЧЕСКОЕ БУДУЩЕЕ</p>
+
+    <h2>Что можно сделать для улучшения экологии?</h2>
+
+    <div class="solutions-grid">
+
+        <div>
+            <span>01</span>
+            <h3>Чистый воздух</h3>
+            <p>
+                Контроль выбросов, развитие общественного транспорта,
+                озеленение и снижение загрязнения.
+            </p>
+        </div>
+
+        <div>
+            <span>02</span>
+            <h3>Чистая вода</h3>
+            <p>
+                Мониторинг качества воды, защита берегов
+                и предотвращение загрязнения Иртыша.
+            </p>
+        </div>
+
+        <div>
+            <span>03</span>
+            <h3>Раздельный сбор</h3>
+            <p>
+                Сортировка мусора, развитие переработки
+                и сокращение образования отходов.
+            </p>
+        </div>
+
+        <div>
+            <span>04</span>
+            <h3>Экологическое образование</h3>
+            <p>
+                Просвещение школьников, студентов
+                и жителей города.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ТЕСТ -->
+
+<section class="quiz-section section" id="quiz">
+
+    <p class="eyebrow">05 / ПРОВЕРЬ СЕБЯ</p>
+
+    <h2>Насколько хорошо ты знаешь экологию?</h2>
+
+    <p class="section-desc">
+        Пройди небольшой тест из пяти вопросов.
+    </p>
+
+    <div class="quiz-box">
+
+        <div class="quiz-top">
+            <span id="question-number">ВОПРОС 1 ИЗ 5</span>
+            <span id="progress-text">20%</span>
+        </div>
+
+        <div class="progress">
+            <div id="progress-bar"></div>
+        </div>
+
+        <h3 id="question">
+            Какой документ является основным
+            в сфере охраны окружающей среды Казахстана?
+        </h3>
+
+        <div id="answers" class="answers"></div>
+
+        <button id="next-btn" class="main-btn" disabled>
+            Следующий вопрос →
+        </button>
+
+        <div id="quiz-result"></div>
+
+    </div>
+</section>
+
+
+<!-- ОБРАЩЕНИЯ -->
+
+<section class="contact section" id="contact">
+
+    <p class="eyebrow">06 / ТВОЙ ВКЛАД</p>
+
+    <h2>Экология города зависит от каждого</h2>
+
+    <p>
+        Замечаешь экологическую проблему? Сообщи о ней
+        в уполномоченные органы через официальные каналы обращений.
+    </p>
+
+    <a href="https://eotinish.kz/"
+       target="_blank"
+       class="main-btn">
+        Перейти к обращениям ↗
+    </a>
+
+</section>
+
+</main>
+
+
+<footer>
+    <a href="#home" class="logo">ECO<span>SEMEY</span></a>
+
+    <p>Экологический информационный проект города Семей</p>
+
+    <p>© 2026 ECO SEMEY</p>
+</footer>
+
+
+<script>
+
+const questions = [
+    {
+        q: "Какой документ является основным в сфере охраны окружающей среды Казахстана?",
+        a: ["Экологический кодекс", "Трудовой кодекс", "Налоговый кодекс", "Жилищный кодекс"],
+        correct: 0,
+        info: "Экологический кодекс РК регулирует отношения в области охраны окружающей среды."
+    },
+    {
+        q: "Какая река протекает через город Семей?",
+        a: ["Ишим", "Иртыш", "Сырдарья", "Урал"],
+        correct: 1,
+        info: "Семей расположен на берегах реки Иртыш."
+    },
+    {
+        q: "Кто осуществляет государственный экологический контроль?",
+        a: ["Школы", "Частные магазины", "Уполномоченные органы экологического контроля", "Туристические компании"],
+        correct: 2,
+        info: "Государственный экологический контроль осуществляют уполномоченные государственные органы."
+    },
+    {
+        q: "Что означает раздельный сбор отходов?",
+        a: ["Сжигание всего мусора", "Смешивание отходов", "Выбрасывание мусора в реку", "Разделение отходов по видам"],
+        correct: 3,
+        info: "Раздельный сбор позволяет направлять отдельные виды отходов на переработку."
+    },
+    {
+        q: "Почему важно сохранять зелёные насаждения?",
+        a: ["Они улучшают городскую среду", "Они увеличивают количество мусора", "Они загрязняют воду", "Они мешают очистке воздуха"],
+        correct: 0,
+        info: "Растения участвуют в поглощении углекислого газа, задерживают пыль и создают комфортную городскую среду."
+    }
+];
+
+let current = 0;
+let score = 0;
+let selected = false;
+
+const questionEl = document.getElementById("question");
+const answersEl = document.getElementById("answers");
+const nextBtn = document.getElementById("next-btn");
+
+function showQuestion() {
+
+    selected = false;
+    nextBtn.disabled = true;
+
+    nextBtn.textContent = current === questions.length - 1
+        ? "Посмотреть результат →"
+        : "Следующий вопрос →";
+
+    const item = questions[current];
+
+    questionEl.textContent = item.q;
+    answersEl.innerHTML = "";
+
+    document.getElementById("question-number").textContent =
+        `ВОПРОС ${current + 1} ИЗ ${questions.length}`;
+
+    document.getElementById("progress-text").textContent =
+        `${Math.round((current + 1) / questions.length * 100)}%`;
+
+    document.getElementById("progress-bar").style.width =
+        `${(current + 1) / questions.length * 100}%`;
+
+    item.a.forEach((answer, index) => {
+
+        const btn = document.createElement("button");
+
+        btn.className = "answer";
+        btn.textContent = answer;
+
+        btn.onclick = () => selectAnswer(index, btn);
+
+        answersEl.appendChild(btn);
+
+    });
+}
+
+
+function selectAnswer(index, button) {
+
+    if (selected) return;
+
+    selected = true;
+
+    const item = questions[current];
+
+    const all = document.querySelectorAll(".answer");
+
+    all.forEach((btn, i) => {
+
+        btn.disabled = true;
+
+        if (i === item.correct) {
+            btn.classList.add("correct");
+        }
+
+    });
+
+    if (index === item.correct) {
+
+        score++;
+        button.classList.add("correct");
+
+    } else {
+
+        button.classList.add("wrong");
+
+    }
+
+    const feedback = document.createElement("p");
+
+    feedback.className = "feedback";
+    feedback.textContent = item.info;
+
+    answersEl.appendChild(feedback);
+
+    nextBtn.disabled = false;
+
+}
+
+
+nextBtn.addEventListener("click", () => {
+
+    if (!selected) return;
+
+    current++;
+
+    if (current < questions.length) {
+
+        showQuestion();
+
+    } else {
+
+        showResult();
+
+    }
+
+});
+
+
+function showResult() {
+
+    document.querySelector(".quiz-top").style.display = "none";
+    document.querySelector(".progress").style.display = "none";
+
+    questionEl.textContent = "Тест завершён!";
+
+    answersEl.innerHTML = `
+        <div class="result">
+            <strong>${score} / ${questions.length}</strong>
+            <p>Правильных ответов</p>
+            <p>
+                ${
+                    score === 5
+                    ? "Отлично! Ты прекрасно знаешь экологию!"
+                    : score >= 3
+                    ? "Хороший результат! Продолжай изучать экологию."
+                    : "Есть над чем поработать. Изучи разделы сайта и попробуй ещё раз."
+                }
+            </p>
+        </div>
+    `;
+
+    nextBtn.textContent = "Пройти ещё раз";
+    nextBtn.disabled = false;
+
+    nextBtn.onclick = () => location.reload();
+
+}
+
+showQuestion();
+
+</script>
+
+</body>
+</html>
